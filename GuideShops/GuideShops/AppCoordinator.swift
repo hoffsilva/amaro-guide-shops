@@ -11,13 +11,17 @@ import UIKit
 class AppCoordinator: Coordinator {
     
     private let window: UIWindow
+    private let navigationController: UINavigationController
     
-    init(_ window: UIWindow) {
+    init(_ window: UIWindow,
+         _ navigationController: UINavigationController) {
         self.window = window
+        self.navigationController = navigationController
     }
     
     func start() {
-        self.window.rootViewController = ViewController()
+        self.window.rootViewController = navigationController
+        self.navigationController.viewControllers = [ViewController()]
     }
     
 }

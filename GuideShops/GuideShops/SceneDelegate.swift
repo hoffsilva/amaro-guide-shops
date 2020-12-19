@@ -11,9 +11,11 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
 
     var window: UIWindow?
     var appCoordinador: Coordinator?
+    var navigationController: UINavigationController?
 
     func scene(_ scene: UIScene, willConnectTo session: UISceneSession, options connectionOptions: UIScene.ConnectionOptions) {
         guard let windowScene = (scene as? UIWindowScene) else { return }
+        self.navigationController = UINavigationController()
         configureWindow(windowScene)
         configureAppCoordinator()
     }
@@ -25,10 +27,11 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
     }
     
     private func configureAppCoordinator() {
-        guard let window = self.window else {
+        guard let window = self.window,
+              let navigationController = self.navigationController else {
             return
         }
-        self.appCoordinador = AppCoordinator(window)
+        self.appCoordinador = AppCoordinator(window, navigationController)
         appCoordinador?.start()
     }
 
