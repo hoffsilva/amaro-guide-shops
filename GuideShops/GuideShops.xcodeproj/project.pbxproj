@@ -20,6 +20,7 @@
 		0B1B82E1258E5B5F0032C49D /* SDWebImage in Frameworks */ = {isa = PBXBuildFile; productRef = 0B1B82E0258E5B5F0032C49D /* SDWebImage */; };
 		0B1B82E6258E5BA30032C49D /* UIView+ConstraintsUtils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B1B82E5258E5BA30032C49D /* UIView+ConstraintsUtils.swift */; };
 		0B1B82EC258E5C4D0032C49D /* Moya in Frameworks */ = {isa = PBXBuildFile; productRef = 0B1B82EB258E5C4D0032C49D /* Moya */; };
+		0B1B82F2258E5C8E0032C49D /* Resolver in Frameworks */ = {isa = PBXBuildFile; productRef = 0B1B82F1258E5C8E0032C49D /* Resolver */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -64,6 +65,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0B1B82F2258E5C8E0032C49D /* Resolver in Frameworks */,
 				0B1B82EC258E5C4D0032C49D /* Moya in Frameworks */,
 				0B1B82E1258E5B5F0032C49D /* SDWebImage in Frameworks */,
 			);
@@ -160,6 +162,7 @@
 			packageProductDependencies = (
 				0B1B82E0258E5B5F0032C49D /* SDWebImage */,
 				0B1B82EB258E5C4D0032C49D /* Moya */,
+				0B1B82F1258E5C8E0032C49D /* Resolver */,
 			);
 			productName = GuideShops;
 			productReference = 0B1B8299258E4CE70032C49D /* GuideShops.app */;
@@ -235,6 +238,7 @@
 			packageReferences = (
 				0B1B82DF258E5B5F0032C49D /* XCRemoteSwiftPackageReference "SDWebImage" */,
 				0B1B82EA258E5C4D0032C49D /* XCRemoteSwiftPackageReference "Moya" */,
+				0B1B82F0258E5C8E0032C49D /* XCRemoteSwiftPackageReference "Resolver" */,
 			);
 			productRefGroup = 0B1B829A258E4CE70032C49D /* Products */;
 			projectDirPath = "";
@@ -635,6 +639,14 @@
 				minimumVersion = 14.0.0;
 			};
 		};
+		0B1B82F0258E5C8E0032C49D /* XCRemoteSwiftPackageReference "Resolver" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/hmlongco/Resolver.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 1.2.1;
+			};
+		};
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
@@ -647,6 +659,11 @@
 			isa = XCSwiftPackageProductDependency;
 			package = 0B1B82EA258E5C4D0032C49D /* XCRemoteSwiftPackageReference "Moya" */;
 			productName = Moya;
+		};
+		0B1B82F1258E5C8E0032C49D /* Resolver */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 0B1B82F0258E5C8E0032C49D /* XCRemoteSwiftPackageReference "Resolver" */;
+			productName = Resolver;
 		};
 /* End XCSwiftPackageProductDependency section */
 	};
