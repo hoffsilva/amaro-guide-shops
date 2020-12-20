@@ -7,6 +7,7 @@
 
 import Foundation
 import UIKit
+import Resolver
 
 class AppCoordinator: Coordinator {
     
@@ -21,7 +22,7 @@ class AppCoordinator: Coordinator {
     
     func start() {
         self.window.rootViewController = navigationController
-        self.navigationController.viewControllers = [ViewController()]
+        self.navigationController.viewControllers = [Resolver.resolve(GuideShopsListViewController.self)]
     }
     
 }

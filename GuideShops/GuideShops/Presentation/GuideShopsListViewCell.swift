@@ -16,7 +16,7 @@ struct GuideShopsListViewCellData {
 
 class GuideShopsListViewCell: UITableViewCell {
 
-    private lazy var titleLabbel: UILabel = {
+    private lazy var titleLabel: UILabel = {
         let label = UILabel()
         return label
     }()
@@ -27,22 +27,27 @@ class GuideShopsListViewCell: UITableViewCell {
         return imageView
     }()
     
-    convenience init() {
-        self.init(frame: .zero)
+    override init(style: UITableViewCell.CellStyle, reuseIdentifier: String?) {
+        super.init(style: style, reuseIdentifier: reuseIdentifier)
         setUpViews()
     }
     
-    func setUpCell(_ data: GuideShopsListViewCellData) {
-        self.titleLabbel.text = data.title
-        self.imageView?
+    required init?(coder: NSCoder) {
+        super.init(coder: coder)
+    }
+    
+    func setUpCell(data: GuideShopsListViewCellData) {
+        self.titleLabel.text = data.title
+        self.thumbnailImageView
             .sd_setImage(
                 with: URL(string: data.imageUrl),
                 completed: nil)
     }
     
     override func prepareForReuse() {
-        self.titleLabbel.text = nil
-        self.imageView?.image = nil
+        super.prepareForReuse()
+        self.titleLabel.text = nil
+        self.thumbnailImageView.image = nil
     }
     
 }
@@ -51,7 +56,7 @@ extension GuideShopsListViewCell: ViewCodable {
     
     func setUpViewHierarchy() {
         subviews {
-            titleLabbel
+            titleLabel
             thumbnailImageView
         }
     }
@@ -59,11 +64,16 @@ extension GuideShopsListViewCell: ViewCodable {
     func setUpConstraints() {
         layout {
             16
-            |-16-self.titleLabbel-16-|
+            |-16-self.titleLabel-16-|
             16
             |-16-self.thumbnailImageView.heightEqualsWidth()-16-|
             16
         }
+    }
+    
+    func setUpAdditionalConfigurations() {
+        titleLabel.numberOfLines = 0
+        self.selectionStyle = .none
     }
     
 }

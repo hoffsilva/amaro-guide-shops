@@ -33,4 +33,9 @@ extension GuideShopsListView: ViewCodable {
         guideShopsTableView.fillContainer()
     }
     
+    func setUpAdditionalConfigurations() {
+        guideShopsTableView.estimatedRowHeight = 100
+        guideShopsTableView.rowHeight = UITableView.automaticDimension
+    }
+    
 }

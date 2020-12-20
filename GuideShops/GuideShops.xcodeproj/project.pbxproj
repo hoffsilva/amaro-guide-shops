@@ -11,10 +11,14 @@
 		0B199279258EE6C600759B16 /* GuideShopsListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B199278258EE6C600759B16 /* GuideShopsListView.swift */; };
 		0B19927E258EE7C800759B16 /* ViewCodable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B19927D258EE7C800759B16 /* ViewCodable.swift */; };
 		0B199286258EF4A200759B16 /* GuideShopsListViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B199285258EF4A200759B16 /* GuideShopsListViewCell.swift */; };
+		0B19928B258FA67700759B16 /* GuideShopsListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B19928A258FA67700759B16 /* GuideShopsListViewController.swift */; };
+		0B199290258FA79400759B16 /* AppDelegate+Injection.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B19928F258FA79400759B16 /* AppDelegate+Injection.swift */; };
+		0B199295258FA7FD00759B16 /* Views+Injection.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B199294258FA7FD00759B16 /* Views+Injection.swift */; };
+		0B19929A258FA86700759B16 /* ViewControllers+Injection.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B199299258FA86700759B16 /* ViewControllers+Injection.swift */; };
+		0B19929F258FB17D00759B16 /* ViewModels+Injection.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B19929E258FB17D00759B16 /* ViewModels+Injection.swift */; };
+		0B1992A4258FB1BF00759B16 /* GuideShopsListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B1992A3258FB1BF00759B16 /* GuideShopsListViewModel.swift */; };
 		0B1B829D258E4CE70032C49D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B1B829C258E4CE70032C49D /* AppDelegate.swift */; };
 		0B1B829F258E4CE70032C49D /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B1B829E258E4CE70032C49D /* SceneDelegate.swift */; };
-		0B1B82A1258E4CE70032C49D /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B1B82A0258E4CE70032C49D /* ViewController.swift */; };
-		0B1B82A4258E4CE70032C49D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0B1B82A2258E4CE70032C49D /* Main.storyboard */; };
 		0B1B82A6258E4CE80032C49D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0B1B82A5258E4CE80032C49D /* Assets.xcassets */; };
 		0B1B82A9258E4CE80032C49D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0B1B82A7258E4CE80032C49D /* LaunchScreen.storyboard */; };
 		0B1B82B4258E4CE80032C49D /* GuideShopsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B1B82B3258E4CE80032C49D /* GuideShopsTests.swift */; };
@@ -47,11 +51,15 @@
 		0B199278258EE6C600759B16 /* GuideShopsListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GuideShopsListView.swift; sourceTree = "<group>"; };
 		0B19927D258EE7C800759B16 /* ViewCodable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewCodable.swift; sourceTree = "<group>"; };
 		0B199285258EF4A200759B16 /* GuideShopsListViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GuideShopsListViewCell.swift; sourceTree = "<group>"; };
+		0B19928A258FA67700759B16 /* GuideShopsListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GuideShopsListViewController.swift; sourceTree = "<group>"; };
+		0B19928F258FA79400759B16 /* AppDelegate+Injection.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "AppDelegate+Injection.swift"; sourceTree = "<group>"; };
+		0B199294258FA7FD00759B16 /* Views+Injection.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Views+Injection.swift"; sourceTree = "<group>"; };
+		0B199299258FA86700759B16 /* ViewControllers+Injection.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ViewControllers+Injection.swift"; sourceTree = "<group>"; };
+		0B19929E258FB17D00759B16 /* ViewModels+Injection.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ViewModels+Injection.swift"; sourceTree = "<group>"; };
+		0B1992A3258FB1BF00759B16 /* GuideShopsListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GuideShopsListViewModel.swift; sourceTree = "<group>"; };
 		0B1B8299258E4CE70032C49D /* GuideShops.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GuideShops.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		0B1B829C258E4CE70032C49D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		0B1B829E258E4CE70032C49D /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		0B1B82A0258E4CE70032C49D /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		0B1B82A3258E4CE70032C49D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		0B1B82A5258E4CE80032C49D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		0B1B82A8258E4CE80032C49D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		0B1B82AA258E4CE80032C49D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -94,6 +102,38 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		0B1992B1258FECAC00759B16 /* Presentation */ = {
+			isa = PBXGroup;
+			children = (
+				0B19927D258EE7C800759B16 /* ViewCodable.swift */,
+				0B199278258EE6C600759B16 /* GuideShopsListView.swift */,
+				0B199285258EF4A200759B16 /* GuideShopsListViewCell.swift */,
+				0B19928A258FA67700759B16 /* GuideShopsListViewController.swift */,
+				0B1992A3258FB1BF00759B16 /* GuideShopsListViewModel.swift */,
+			);
+			path = Presentation;
+			sourceTree = "<group>";
+		};
+		0B1992B5258FECE400759B16 /* Coordinator */ = {
+			isa = PBXGroup;
+			children = (
+				0B1B82D2258E4D750032C49D /* Coordinator.swift */,
+				0B1B82DA258E4D990032C49D /* AppCoordinator.swift */,
+			);
+			path = Coordinator;
+			sourceTree = "<group>";
+		};
+		0B1992B9258FECF100759B16 /* DependencyInjection */ = {
+			isa = PBXGroup;
+			children = (
+				0B19928F258FA79400759B16 /* AppDelegate+Injection.swift */,
+				0B199294258FA7FD00759B16 /* Views+Injection.swift */,
+				0B199299258FA86700759B16 /* ViewControllers+Injection.swift */,
+				0B19929E258FB17D00759B16 /* ViewModels+Injection.swift */,
+			);
+			path = DependencyInjection;
+			sourceTree = "<group>";
+		};
 		0B1B8290258E4CE70032C49D = {
 			isa = PBXGroup;
 			children = (
@@ -119,16 +159,12 @@
 			children = (
 				0B1B829C258E4CE70032C49D /* AppDelegate.swift */,
 				0B1B829E258E4CE70032C49D /* SceneDelegate.swift */,
-				0B1B82A0258E4CE70032C49D /* ViewController.swift */,
-				0B1B82A2258E4CE70032C49D /* Main.storyboard */,
 				0B1B82A5258E4CE80032C49D /* Assets.xcassets */,
 				0B1B82A7258E4CE80032C49D /* LaunchScreen.storyboard */,
 				0B1B82AA258E4CE80032C49D /* Info.plist */,
-				0B1B82D2258E4D750032C49D /* Coordinator.swift */,
-				0B1B82DA258E4D990032C49D /* AppCoordinator.swift */,
-				0B199278258EE6C600759B16 /* GuideShopsListView.swift */,
-				0B19927D258EE7C800759B16 /* ViewCodable.swift */,
-				0B199285258EF4A200759B16 /* GuideShopsListViewCell.swift */,
+				0B1992B5258FECE400759B16 /* Coordinator */,
+				0B1992B1258FECAC00759B16 /* Presentation */,
+				0B1992B9258FECF100759B16 /* DependencyInjection */,
 			);
 			path = GuideShops;
 			sourceTree = "<group>";
@@ -268,7 +304,6 @@
 			files = (
 				0B1B82A9258E4CE80032C49D /* LaunchScreen.storyboard in Resources */,
 				0B1B82A6258E4CE80032C49D /* Assets.xcassets in Resources */,
-				0B1B82A4258E4CE70032C49D /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -295,9 +330,14 @@
 			files = (
 				0B19927E258EE7C800759B16 /* ViewCodable.swift in Sources */,
 				0B199286258EF4A200759B16 /* GuideShopsListViewCell.swift in Sources */,
+				0B19929A258FA86700759B16 /* ViewControllers+Injection.swift in Sources */,
 				0B1B82D3258E4D750032C49D /* Coordinator.swift in Sources */,
-				0B1B82A1258E4CE70032C49D /* ViewController.swift in Sources */,
+				0B19928B258FA67700759B16 /* GuideShopsListViewController.swift in Sources */,
+				0B199290258FA79400759B16 /* AppDelegate+Injection.swift in Sources */,
+				0B199295258FA7FD00759B16 /* Views+Injection.swift in Sources */,
+				0B1992A4258FB1BF00759B16 /* GuideShopsListViewModel.swift in Sources */,
 				0B199279258EE6C600759B16 /* GuideShopsListView.swift in Sources */,
+				0B19929F258FB17D00759B16 /* ViewModels+Injection.swift in Sources */,
 				0B1B82DB258E4D990032C49D /* AppCoordinator.swift in Sources */,
 				0B1B829D258E4CE70032C49D /* AppDelegate.swift in Sources */,
 				0B1B829F258E4CE70032C49D /* SceneDelegate.swift in Sources */,
@@ -336,14 +376,6 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		0B1B82A2258E4CE70032C49D /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				0B1B82A3258E4CE70032C49D /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		0B1B82A7258E4CE80032C49D /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -479,6 +511,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = C434CHPZ37;
 				INFOPLIST_FILE = GuideShops/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -498,6 +531,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = C434CHPZ37;
 				INFOPLIST_FILE = GuideShops/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
