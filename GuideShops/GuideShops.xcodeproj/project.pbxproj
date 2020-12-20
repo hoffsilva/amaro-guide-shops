@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0B199271258EE61C00759B16 /* Stevia in Frameworks */ = {isa = PBXBuildFile; productRef = 0B199270258EE61C00759B16 /* Stevia */; };
 		0B1B829D258E4CE70032C49D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B1B829C258E4CE70032C49D /* AppDelegate.swift */; };
 		0B1B829F258E4CE70032C49D /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B1B829E258E4CE70032C49D /* SceneDelegate.swift */; };
 		0B1B82A1258E4CE70032C49D /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B1B82A0258E4CE70032C49D /* ViewController.swift */; };
@@ -18,9 +19,9 @@
 		0B1B82D3258E4D750032C49D /* Coordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B1B82D2258E4D750032C49D /* Coordinator.swift */; };
 		0B1B82DB258E4D990032C49D /* AppCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B1B82DA258E4D990032C49D /* AppCoordinator.swift */; };
 		0B1B82E1258E5B5F0032C49D /* SDWebImage in Frameworks */ = {isa = PBXBuildFile; productRef = 0B1B82E0258E5B5F0032C49D /* SDWebImage */; };
-		0B1B82E6258E5BA30032C49D /* UIView+ConstraintsUtils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B1B82E5258E5BA30032C49D /* UIView+ConstraintsUtils.swift */; };
 		0B1B82EC258E5C4D0032C49D /* Moya in Frameworks */ = {isa = PBXBuildFile; productRef = 0B1B82EB258E5C4D0032C49D /* Moya */; };
 		0B1B82F2258E5C8E0032C49D /* Resolver in Frameworks */ = {isa = PBXBuildFile; productRef = 0B1B82F1258E5C8E0032C49D /* Resolver */; };
+		0B1B82F7258E5D540032C49D /* CodableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B1B82F6258E5D540032C49D /* CodableView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -57,7 +58,7 @@
 		0B1B82C0258E4CE80032C49D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		0B1B82D2258E4D750032C49D /* Coordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Coordinator.swift; sourceTree = "<group>"; };
 		0B1B82DA258E4D990032C49D /* AppCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppCoordinator.swift; sourceTree = "<group>"; };
-		0B1B82E5258E5BA30032C49D /* UIView+ConstraintsUtils.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+ConstraintsUtils.swift"; sourceTree = "<group>"; };
+		0B1B82F6258E5D540032C49D /* CodableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CodableView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -67,6 +68,7 @@
 			files = (
 				0B1B82F2258E5C8E0032C49D /* Resolver in Frameworks */,
 				0B1B82EC258E5C4D0032C49D /* Moya in Frameworks */,
+				0B199271258EE61C00759B16 /* Stevia in Frameworks */,
 				0B1B82E1258E5B5F0032C49D /* SDWebImage in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -120,7 +122,7 @@
 				0B1B82AA258E4CE80032C49D /* Info.plist */,
 				0B1B82D2258E4D750032C49D /* Coordinator.swift */,
 				0B1B82DA258E4D990032C49D /* AppCoordinator.swift */,
-				0B1B82E5258E5BA30032C49D /* UIView+ConstraintsUtils.swift */,
+				0B1B82F6258E5D540032C49D /* CodableView.swift */,
 			);
 			path = GuideShops;
 			sourceTree = "<group>";
@@ -163,6 +165,7 @@
 				0B1B82E0258E5B5F0032C49D /* SDWebImage */,
 				0B1B82EB258E5C4D0032C49D /* Moya */,
 				0B1B82F1258E5C8E0032C49D /* Resolver */,
+				0B199270258EE61C00759B16 /* Stevia */,
 			);
 			productName = GuideShops;
 			productReference = 0B1B8299258E4CE70032C49D /* GuideShops.app */;
@@ -239,6 +242,7 @@
 				0B1B82DF258E5B5F0032C49D /* XCRemoteSwiftPackageReference "SDWebImage" */,
 				0B1B82EA258E5C4D0032C49D /* XCRemoteSwiftPackageReference "Moya" */,
 				0B1B82F0258E5C8E0032C49D /* XCRemoteSwiftPackageReference "Resolver" */,
+				0B19926F258EE61C00759B16 /* XCRemoteSwiftPackageReference "Stevia" */,
 			);
 			productRefGroup = 0B1B829A258E4CE70032C49D /* Products */;
 			projectDirPath = "";
@@ -283,12 +287,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0B1B82F7258E5D540032C49D /* CodableView.swift in Sources */,
 				0B1B82D3258E4D750032C49D /* Coordinator.swift in Sources */,
 				0B1B82A1258E4CE70032C49D /* ViewController.swift in Sources */,
 				0B1B82DB258E4D990032C49D /* AppCoordinator.swift in Sources */,
 				0B1B829D258E4CE70032C49D /* AppDelegate.swift in Sources */,
 				0B1B829F258E4CE70032C49D /* SceneDelegate.swift in Sources */,
-				0B1B82E6258E5BA30032C49D /* UIView+ConstraintsUtils.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -623,6 +627,14 @@
 /* End XCConfigurationList section */
 
 /* Begin XCRemoteSwiftPackageReference section */
+		0B19926F258EE61C00759B16 /* XCRemoteSwiftPackageReference "Stevia" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/freshOS/Stevia";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.1.1;
+			};
+		};
 		0B1B82DF258E5B5F0032C49D /* XCRemoteSwiftPackageReference "SDWebImage" */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/SDWebImage/SDWebImage.git";
@@ -650,6 +662,11 @@
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
+		0B199270258EE61C00759B16 /* Stevia */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 0B19926F258EE61C00759B16 /* XCRemoteSwiftPackageReference "Stevia" */;
+			productName = Stevia;
+		};
 		0B1B82E0258E5B5F0032C49D /* SDWebImage */ = {
 			isa = XCSwiftPackageProductDependency;
 			package = 0B1B82DF258E5B5F0032C49D /* XCRemoteSwiftPackageReference "SDWebImage" */;
