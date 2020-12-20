@@ -8,6 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		0B199271258EE61C00759B16 /* Stevia in Frameworks */ = {isa = PBXBuildFile; productRef = 0B199270258EE61C00759B16 /* Stevia */; };
+		0B199279258EE6C600759B16 /* GuideShopsListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B199278258EE6C600759B16 /* GuideShopsListView.swift */; };
+		0B19927E258EE7C800759B16 /* ViewCodable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B19927D258EE7C800759B16 /* ViewCodable.swift */; };
 		0B1B829D258E4CE70032C49D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B1B829C258E4CE70032C49D /* AppDelegate.swift */; };
 		0B1B829F258E4CE70032C49D /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B1B829E258E4CE70032C49D /* SceneDelegate.swift */; };
 		0B1B82A1258E4CE70032C49D /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B1B82A0258E4CE70032C49D /* ViewController.swift */; };
@@ -21,7 +23,6 @@
 		0B1B82E1258E5B5F0032C49D /* SDWebImage in Frameworks */ = {isa = PBXBuildFile; productRef = 0B1B82E0258E5B5F0032C49D /* SDWebImage */; };
 		0B1B82EC258E5C4D0032C49D /* Moya in Frameworks */ = {isa = PBXBuildFile; productRef = 0B1B82EB258E5C4D0032C49D /* Moya */; };
 		0B1B82F2258E5C8E0032C49D /* Resolver in Frameworks */ = {isa = PBXBuildFile; productRef = 0B1B82F1258E5C8E0032C49D /* Resolver */; };
-		0B1B82F7258E5D540032C49D /* CodableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B1B82F6258E5D540032C49D /* CodableView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -42,6 +43,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		0B199278258EE6C600759B16 /* GuideShopsListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GuideShopsListView.swift; sourceTree = "<group>"; };
+		0B19927D258EE7C800759B16 /* ViewCodable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewCodable.swift; sourceTree = "<group>"; };
 		0B1B8299258E4CE70032C49D /* GuideShops.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GuideShops.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		0B1B829C258E4CE70032C49D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		0B1B829E258E4CE70032C49D /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -58,7 +61,6 @@
 		0B1B82C0258E4CE80032C49D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		0B1B82D2258E4D750032C49D /* Coordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Coordinator.swift; sourceTree = "<group>"; };
 		0B1B82DA258E4D990032C49D /* AppCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppCoordinator.swift; sourceTree = "<group>"; };
-		0B1B82F6258E5D540032C49D /* CodableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CodableView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -122,7 +124,8 @@
 				0B1B82AA258E4CE80032C49D /* Info.plist */,
 				0B1B82D2258E4D750032C49D /* Coordinator.swift */,
 				0B1B82DA258E4D990032C49D /* AppCoordinator.swift */,
-				0B1B82F6258E5D540032C49D /* CodableView.swift */,
+				0B199278258EE6C600759B16 /* GuideShopsListView.swift */,
+				0B19927D258EE7C800759B16 /* ViewCodable.swift */,
 			);
 			path = GuideShops;
 			sourceTree = "<group>";
@@ -287,9 +290,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				0B1B82F7258E5D540032C49D /* CodableView.swift in Sources */,
+				0B19927E258EE7C800759B16 /* ViewCodable.swift in Sources */,
 				0B1B82D3258E4D750032C49D /* Coordinator.swift in Sources */,
 				0B1B82A1258E4CE70032C49D /* ViewController.swift in Sources */,
+				0B199279258EE6C600759B16 /* GuideShopsListView.swift in Sources */,
 				0B1B82DB258E4D990032C49D /* AppCoordinator.swift in Sources */,
 				0B1B829D258E4CE70032C49D /* AppDelegate.swift in Sources */,
 				0B1B829F258E4CE70032C49D /* SceneDelegate.swift in Sources */,
