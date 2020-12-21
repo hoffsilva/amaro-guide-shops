@@ -14,7 +14,7 @@ class GuideShopsListViewController: UIViewController {
     @Injected private var guideShopsListView: GuideShopsListView
     @Injected private var guideShopsListViewModel: GuideShopsListViewModel
     
-    private var cancellable: AnyCancellable?
+    private var cancellables = Set<AnyCancellable>()
     
     override func loadView() {
     }
@@ -38,14 +38,19 @@ class GuideShopsListViewController: UIViewController {
     
     private func setUpBindings() {
         
-       cancellable = guideShopsListViewModel
-            .$shopsDidLoad
+        guideShopsListViewModel
+            .$shopsDidLoadWithSuccess
             .sink { [weak self] _ in
                 self?.guideShopsListView.guideShopsTableView.reloadData()
-        }
+            }.store(in: &cancellables)
         
+        guideShopsListViewModel
+            .$shopsDidLoadWithError
+            .sink { errorMessage in
+                print(errorMessage)
+            }.store(in: &cancellables)
     }
-
+    
 }
 
 extension GuideShopsListViewController: UITableViewDataSource {

@@ -6,22 +6,37 @@
 //
 
 import Combine
+import Resolver
 
 class GuideShopsListViewModel {
     
-    @Published var listOfShops = [GuideShopsListViewCellData]()
-    @Published var shopsDidLoad: Void = ()
+    @Injected var getAllGuideShopsUseCase: GetAllGuideShops
+    
+    var listOfShops = [GuideShopsListViewCellData]() {
+        didSet {
+            self.shopsDidLoadWithSuccess = ()
+        }
+    }
+    
+    @Published var shopsDidLoadWithSuccess: Void = ()
+    @Published var shopsDidLoadWithError: String = ""
+    
+    var cancellable: AnyCancellable?
     
     func getGuideShops() {
-        listOfShops = [
-            GuideShopsListViewCellData(
-                title: "PÁTIO HIGIENÓPOLIS",
-                imageUrl: "https://cdn.amaro.com/uploads/cms/guide-shop-images_20181112134925.jpg"),
-            GuideShopsListViewCellData(
-                title: "OSCAR FREIRE",
-                imageUrl: "https://res.cloudinary.com/amaromkt/image/upload/v1572536366/GuideShops/retroFit/GROF/20191031-AMARO-guide-shop-thumb_GROF.jpg")
-        ]
-        shopsDidLoad = ()
+        
+        cancellable = getAllGuideShopsUseCase
+            .getAllGuideShops()
+            .sink { [weak self] error in
+                switch error {
+                case .failure(let error):
+                    self?.shopsDidLoadWithError = error.localizedDescription
+                case .finished: break
+                }
+            } receiveValue: { [weak self] data in
+                self?.listOfShops = data
+            }
+        
     }
     
     

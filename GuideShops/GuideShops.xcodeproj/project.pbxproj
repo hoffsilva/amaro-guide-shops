@@ -21,13 +21,36 @@
 		0B1B829F258E4CE70032C49D /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B1B829E258E4CE70032C49D /* SceneDelegate.swift */; };
 		0B1B82A6258E4CE80032C49D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0B1B82A5258E4CE80032C49D /* Assets.xcassets */; };
 		0B1B82A9258E4CE80032C49D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0B1B82A7258E4CE80032C49D /* LaunchScreen.storyboard */; };
-		0B1B82B4258E4CE80032C49D /* GuideShopsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B1B82B3258E4CE80032C49D /* GuideShopsTests.swift */; };
+		0B1B82B4258E4CE80032C49D /* GetAllGuideShopsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B1B82B3258E4CE80032C49D /* GetAllGuideShopsTests.swift */; };
 		0B1B82BF258E4CE80032C49D /* GuideShopsUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B1B82BE258E4CE80032C49D /* GuideShopsUITests.swift */; };
 		0B1B82D3258E4D750032C49D /* Coordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B1B82D2258E4D750032C49D /* Coordinator.swift */; };
 		0B1B82DB258E4D990032C49D /* AppCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B1B82DA258E4D990032C49D /* AppCoordinator.swift */; };
 		0B1B82E1258E5B5F0032C49D /* SDWebImage in Frameworks */ = {isa = PBXBuildFile; productRef = 0B1B82E0258E5B5F0032C49D /* SDWebImage */; };
 		0B1B82EC258E5C4D0032C49D /* Moya in Frameworks */ = {isa = PBXBuildFile; productRef = 0B1B82EB258E5C4D0032C49D /* Moya */; };
 		0B1B82F2258E5C8E0032C49D /* Resolver in Frameworks */ = {isa = PBXBuildFile; productRef = 0B1B82F1258E5C8E0032C49D /* Resolver */; };
+		0B87129B259027810000A51B /* GetAllGuideShopsImpl.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0BA593A725900327006BFA5A /* GetAllGuideShopsImpl.swift */; };
+		0B87129F259027C60000A51B /* GetAllGuideShops.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0BA5939F259001CE006BFA5A /* GetAllGuideShops.swift */; };
+		0B8712A3259027CC0000A51B /* GetAllGuideShopsRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0BA593AC259003BB006BFA5A /* GetAllGuideShopsRepository.swift */; };
+		0B8712A7259027E60000A51B /* GuideShopsListViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B199285258EF4A200759B16 /* GuideShopsListViewCell.swift */; };
+		0B8712AB259027F40000A51B /* ViewCodable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B19927D258EE7C800759B16 /* ViewCodable.swift */; };
+		0B8712AF259028B50000A51B /* GetAllGuideShopsRepositoryImpl.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0BA593B1259003F0006BFA5A /* GetAllGuideShopsRepositoryImpl.swift */; };
+		0B8712B3259028C70000A51B /* GetAllGuideShopsNetworkDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0BA593BC259005E6006BFA5A /* GetAllGuideShopsNetworkDataSource.swift */; };
+		0B8712B7259028CE0000A51B /* GetAllGuideShopsLocalDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0BA593C425900629006BFA5A /* GetAllGuideShopsLocalDataSource.swift */; };
+		0B8712C7259034FF0000A51B /* GetAllGuideShopsRepositoryMock.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B8712C2259033990000A51B /* GetAllGuideShopsRepositoryMock.swift */; };
+		0BA593A0259001CE006BFA5A /* GetAllGuideShops.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0BA5939F259001CE006BFA5A /* GetAllGuideShops.swift */; };
+		0BA593A825900327006BFA5A /* GetAllGuideShopsImpl.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0BA593A725900327006BFA5A /* GetAllGuideShopsImpl.swift */; };
+		0BA593AD259003BB006BFA5A /* GetAllGuideShopsRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0BA593AC259003BB006BFA5A /* GetAllGuideShopsRepository.swift */; };
+		0BA593B2259003F0006BFA5A /* GetAllGuideShopsRepositoryImpl.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0BA593B1259003F0006BFA5A /* GetAllGuideShopsRepositoryImpl.swift */; };
+		0BA593BD259005E6006BFA5A /* GetAllGuideShopsNetworkDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0BA593BC259005E6006BFA5A /* GetAllGuideShopsNetworkDataSource.swift */; };
+		0BA593C525900629006BFA5A /* GetAllGuideShopsLocalDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0BA593C425900629006BFA5A /* GetAllGuideShopsLocalDataSource.swift */; };
+		0BA593CA25900705006BFA5A /* GetAllGuideShopsLocalDataSourceImpl.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0BA593C925900705006BFA5A /* GetAllGuideShopsLocalDataSourceImpl.swift */; };
+		0BA593CF259008A6006BFA5A /* GetAllGuideShopsNetworkDataSourceImpl.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0BA593CE259008A6006BFA5A /* GetAllGuideShopsNetworkDataSourceImpl.swift */; };
+		0BA593D425900994006BFA5A /* GetAllGuideShopsProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0BA593D325900994006BFA5A /* GetAllGuideShopsProvider.swift */; };
+		0BA593D9259017B1006BFA5A /* CharacterResult.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0BA593D8259017B1006BFA5A /* CharacterResult.swift */; };
+		0BA593DE25901B83006BFA5A /* UseCases+Injection.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0BA593DD25901B83006BFA5A /* UseCases+Injection.swift */; };
+		0BA593E325901BEB006BFA5A /* DataSources+Injection.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0BA593E225901BEB006BFA5A /* DataSources+Injection.swift */; };
+		0BA593E825901C56006BFA5A /* Repositories+Injection.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0BA593E725901C56006BFA5A /* Repositories+Injection.swift */; };
+		0BA593ED25901DD8006BFA5A /* Providers+Injection.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0BA593EC25901DD8006BFA5A /* Providers+Injection.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -64,13 +87,28 @@
 		0B1B82A8258E4CE80032C49D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		0B1B82AA258E4CE80032C49D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		0B1B82AF258E4CE80032C49D /* GuideShopsTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = GuideShopsTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		0B1B82B3258E4CE80032C49D /* GuideShopsTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GuideShopsTests.swift; sourceTree = "<group>"; };
+		0B1B82B3258E4CE80032C49D /* GetAllGuideShopsTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GetAllGuideShopsTests.swift; sourceTree = "<group>"; };
 		0B1B82B5258E4CE80032C49D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		0B1B82BA258E4CE80032C49D /* GuideShopsUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = GuideShopsUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		0B1B82BE258E4CE80032C49D /* GuideShopsUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GuideShopsUITests.swift; sourceTree = "<group>"; };
 		0B1B82C0258E4CE80032C49D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		0B1B82D2258E4D750032C49D /* Coordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Coordinator.swift; sourceTree = "<group>"; };
 		0B1B82DA258E4D990032C49D /* AppCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppCoordinator.swift; sourceTree = "<group>"; };
+		0B8712C2259033990000A51B /* GetAllGuideShopsRepositoryMock.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GetAllGuideShopsRepositoryMock.swift; sourceTree = "<group>"; };
+		0BA5939F259001CE006BFA5A /* GetAllGuideShops.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GetAllGuideShops.swift; sourceTree = "<group>"; };
+		0BA593A725900327006BFA5A /* GetAllGuideShopsImpl.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GetAllGuideShopsImpl.swift; sourceTree = "<group>"; };
+		0BA593AC259003BB006BFA5A /* GetAllGuideShopsRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GetAllGuideShopsRepository.swift; sourceTree = "<group>"; };
+		0BA593B1259003F0006BFA5A /* GetAllGuideShopsRepositoryImpl.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GetAllGuideShopsRepositoryImpl.swift; sourceTree = "<group>"; };
+		0BA593BC259005E6006BFA5A /* GetAllGuideShopsNetworkDataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GetAllGuideShopsNetworkDataSource.swift; sourceTree = "<group>"; };
+		0BA593C425900629006BFA5A /* GetAllGuideShopsLocalDataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GetAllGuideShopsLocalDataSource.swift; sourceTree = "<group>"; };
+		0BA593C925900705006BFA5A /* GetAllGuideShopsLocalDataSourceImpl.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GetAllGuideShopsLocalDataSourceImpl.swift; sourceTree = "<group>"; };
+		0BA593CE259008A6006BFA5A /* GetAllGuideShopsNetworkDataSourceImpl.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GetAllGuideShopsNetworkDataSourceImpl.swift; sourceTree = "<group>"; };
+		0BA593D325900994006BFA5A /* GetAllGuideShopsProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GetAllGuideShopsProvider.swift; sourceTree = "<group>"; };
+		0BA593D8259017B1006BFA5A /* CharacterResult.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharacterResult.swift; sourceTree = "<group>"; };
+		0BA593DD25901B83006BFA5A /* UseCases+Injection.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UseCases+Injection.swift"; sourceTree = "<group>"; };
+		0BA593E225901BEB006BFA5A /* DataSources+Injection.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "DataSources+Injection.swift"; sourceTree = "<group>"; };
+		0BA593E725901C56006BFA5A /* Repositories+Injection.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Repositories+Injection.swift"; sourceTree = "<group>"; };
+		0BA593EC25901DD8006BFA5A /* Providers+Injection.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Providers+Injection.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -130,6 +168,10 @@
 				0B199294258FA7FD00759B16 /* Views+Injection.swift */,
 				0B199299258FA86700759B16 /* ViewControllers+Injection.swift */,
 				0B19929E258FB17D00759B16 /* ViewModels+Injection.swift */,
+				0BA593DD25901B83006BFA5A /* UseCases+Injection.swift */,
+				0BA593E225901BEB006BFA5A /* DataSources+Injection.swift */,
+				0BA593E725901C56006BFA5A /* Repositories+Injection.swift */,
+				0BA593EC25901DD8006BFA5A /* Providers+Injection.swift */,
 			);
 			path = DependencyInjection;
 			sourceTree = "<group>";
@@ -157,6 +199,8 @@
 		0B1B829B258E4CE70032C49D /* GuideShops */ = {
 			isa = PBXGroup;
 			children = (
+				0BA593B625900485006BFA5A /* Data */,
+				0BA5939B25900125006BFA5A /* Domain */,
 				0B1B829C258E4CE70032C49D /* AppDelegate.swift */,
 				0B1B829E258E4CE70032C49D /* SceneDelegate.swift */,
 				0B1B82A5258E4CE80032C49D /* Assets.xcassets */,
@@ -172,7 +216,8 @@
 		0B1B82B2258E4CE80032C49D /* GuideShopsTests */ = {
 			isa = PBXGroup;
 			children = (
-				0B1B82B3258E4CE80032C49D /* GuideShopsTests.swift */,
+				0B8712C2259033990000A51B /* GetAllGuideShopsRepositoryMock.swift */,
+				0B1B82B3258E4CE80032C49D /* GetAllGuideShopsTests.swift */,
 				0B1B82B5258E4CE80032C49D /* Info.plist */,
 			);
 			path = GuideShopsTests;
@@ -185,6 +230,70 @@
 				0B1B82C0258E4CE80032C49D /* Info.plist */,
 			);
 			path = GuideShopsUITests;
+			sourceTree = "<group>";
+		};
+		0BA5939B25900125006BFA5A /* Domain */ = {
+			isa = PBXGroup;
+			children = (
+				0BA5939E25900147006BFA5A /* UseCases */,
+				0BA5939D25900139006BFA5A /* Repositories */,
+				0BA5939C2590012E006BFA5A /* Entities */,
+			);
+			path = Domain;
+			sourceTree = "<group>";
+		};
+		0BA5939C2590012E006BFA5A /* Entities */ = {
+			isa = PBXGroup;
+			children = (
+				0BA593D8259017B1006BFA5A /* CharacterResult.swift */,
+			);
+			path = Entities;
+			sourceTree = "<group>";
+		};
+		0BA5939D25900139006BFA5A /* Repositories */ = {
+			isa = PBXGroup;
+			children = (
+				0BA593AC259003BB006BFA5A /* GetAllGuideShopsRepository.swift */,
+			);
+			path = Repositories;
+			sourceTree = "<group>";
+		};
+		0BA5939E25900147006BFA5A /* UseCases */ = {
+			isa = PBXGroup;
+			children = (
+				0BA5939F259001CE006BFA5A /* GetAllGuideShops.swift */,
+				0BA593A725900327006BFA5A /* GetAllGuideShopsImpl.swift */,
+			);
+			path = UseCases;
+			sourceTree = "<group>";
+		};
+		0BA593B625900485006BFA5A /* Data */ = {
+			isa = PBXGroup;
+			children = (
+				0BA593BB259005C2006BFA5A /* DataSources */,
+				0BA593B72590049B006BFA5A /* Repositories */,
+			);
+			path = Data;
+			sourceTree = "<group>";
+		};
+		0BA593B72590049B006BFA5A /* Repositories */ = {
+			isa = PBXGroup;
+			children = (
+				0BA593B1259003F0006BFA5A /* GetAllGuideShopsRepositoryImpl.swift */,
+			);
+			path = Repositories;
+			sourceTree = "<group>";
+		};
+		0BA593BB259005C2006BFA5A /* DataSources */ = {
+			isa = PBXGroup;
+			children = (
+				0BA593BC259005E6006BFA5A /* GetAllGuideShopsNetworkDataSource.swift */,
+				0BA593C425900629006BFA5A /* GetAllGuideShopsLocalDataSource.swift */,
+				0BA593C925900705006BFA5A /* GetAllGuideShopsLocalDataSourceImpl.swift */,
+				0BA593CE259008A6006BFA5A /* GetAllGuideShopsNetworkDataSourceImpl.swift */,
+				0BA593D325900994006BFA5A /* GetAllGuideShopsProvider.swift */,
+			);
+			path = DataSources;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -328,19 +437,33 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0BA593CF259008A6006BFA5A /* GetAllGuideShopsNetworkDataSourceImpl.swift in Sources */,
 				0B19927E258EE7C800759B16 /* ViewCodable.swift in Sources */,
 				0B199286258EF4A200759B16 /* GuideShopsListViewCell.swift in Sources */,
+				0BA593E325901BEB006BFA5A /* DataSources+Injection.swift in Sources */,
 				0B19929A258FA86700759B16 /* ViewControllers+Injection.swift in Sources */,
 				0B1B82D3258E4D750032C49D /* Coordinator.swift in Sources */,
+				0BA593DE25901B83006BFA5A /* UseCases+Injection.swift in Sources */,
 				0B19928B258FA67700759B16 /* GuideShopsListViewController.swift in Sources */,
 				0B199290258FA79400759B16 /* AppDelegate+Injection.swift in Sources */,
 				0B199295258FA7FD00759B16 /* Views+Injection.swift in Sources */,
 				0B1992A4258FB1BF00759B16 /* GuideShopsListViewModel.swift in Sources */,
+				0BA593CA25900705006BFA5A /* GetAllGuideShopsLocalDataSourceImpl.swift in Sources */,
 				0B199279258EE6C600759B16 /* GuideShopsListView.swift in Sources */,
 				0B19929F258FB17D00759B16 /* ViewModels+Injection.swift in Sources */,
 				0B1B82DB258E4D990032C49D /* AppCoordinator.swift in Sources */,
+				0BA593C525900629006BFA5A /* GetAllGuideShopsLocalDataSource.swift in Sources */,
+				0BA593A0259001CE006BFA5A /* GetAllGuideShops.swift in Sources */,
+				0BA593E825901C56006BFA5A /* Repositories+Injection.swift in Sources */,
 				0B1B829D258E4CE70032C49D /* AppDelegate.swift in Sources */,
 				0B1B829F258E4CE70032C49D /* SceneDelegate.swift in Sources */,
+				0BA593ED25901DD8006BFA5A /* Providers+Injection.swift in Sources */,
+				0BA593B2259003F0006BFA5A /* GetAllGuideShopsRepositoryImpl.swift in Sources */,
+				0BA593D425900994006BFA5A /* GetAllGuideShopsProvider.swift in Sources */,
+				0BA593AD259003BB006BFA5A /* GetAllGuideShopsRepository.swift in Sources */,
+				0BA593D9259017B1006BFA5A /* CharacterResult.swift in Sources */,
+				0BA593A825900327006BFA5A /* GetAllGuideShopsImpl.swift in Sources */,
+				0BA593BD259005E6006BFA5A /* GetAllGuideShopsNetworkDataSource.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -348,7 +471,16 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				0B1B82B4258E4CE80032C49D /* GuideShopsTests.swift in Sources */,
+				0B87129F259027C60000A51B /* GetAllGuideShops.swift in Sources */,
+				0B1B82B4258E4CE80032C49D /* GetAllGuideShopsTests.swift in Sources */,
+				0B8712B7259028CE0000A51B /* GetAllGuideShopsLocalDataSource.swift in Sources */,
+				0B8712C7259034FF0000A51B /* GetAllGuideShopsRepositoryMock.swift in Sources */,
+				0B8712A3259027CC0000A51B /* GetAllGuideShopsRepository.swift in Sources */,
+				0B8712B3259028C70000A51B /* GetAllGuideShopsNetworkDataSource.swift in Sources */,
+				0B8712A7259027E60000A51B /* GuideShopsListViewCell.swift in Sources */,
+				0B8712AF259028B50000A51B /* GetAllGuideShopsRepositoryImpl.swift in Sources */,
+				0B87129B259027810000A51B /* GetAllGuideShopsImpl.swift in Sources */,
+				0B8712AB259027F40000A51B /* ViewCodable.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

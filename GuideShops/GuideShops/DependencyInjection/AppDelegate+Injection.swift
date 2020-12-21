@@ -14,6 +14,10 @@ extension Resolver: ResolverRegistering {
         registerViews()
         registerViewControllers()
         registerViewModels()
+        registerUseCases()
+        registerDataSources()
+        registerRepositories()
+        registerProviders()
     }
     
 }
